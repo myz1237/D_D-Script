@@ -1,0 +1,15 @@
+{
+  "name": "devr_snapshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "goolgesheet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@snapshot-labs/snapshot.js": "^0.3.54",
+    "googleapis": "^95.0.0"
+  }
+}
