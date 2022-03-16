@@ -21,13 +21,18 @@ async function detect(){
         spreadsheetId: sheetId,
         range: "Form Responses 1!B:C"
     });
+    
+    let rawData = sheetData.data.values;
+    //Remove the title array
+    rawData.shift();
     const coorToDiscord = new Map();
-    sheetData.data.values.forEach((element) => {
+
+    rawData.forEach((element) => {
         if(element.length > 1){
             coorToDiscord.set(element[1], element[0]);
         }
     })
-    
+
     console.log(coorToDiscord)
 
 }
